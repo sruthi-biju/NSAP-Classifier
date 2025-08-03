@@ -4,7 +4,7 @@ import json
 
 # Set your API key and deployment URL
 API_KEY = "2W_bdZkTMAK6DS12sof3jMX8YJwxNSZtfziXEriF7ZYp"
-DEPLOYMENT_URL = "https://private.au-syd.ml.cloud.ibm.com/ml/v4/deployments/e5835db5-0e79-4289-a316-c17a7715315b/predictions?version=2021-05-01"
+DEPLOYMENT_URL = "https://au-syd.ml.cloud.ibm.com/ml/v4/deployments/e5835db5-0e79-4289-a316-c17a7715315b/predictions?version=2021-05-01"
 
 st.title("NSAP Scheme Predictor")
 st.markdown("Enter complete demographic and socio-economic details below:")
@@ -77,4 +77,5 @@ if st.button("Predict NSAP Scheme"):
 
             except Exception as e:
                 st.error(f"Unexpected error occurred: {e}")
+
 
